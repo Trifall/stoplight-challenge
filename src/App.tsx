@@ -1,33 +1,12 @@
-import { useState } from 'react';
-import { Button } from './components/ui/button';
+import Stoplight from './components/stoplight';
 
 function App() {
-	const [count, setCount] = useState(0);
-
 	return (
 		<>
-			<main>
-				<section className='bg-dark'>
-					<div className='layout flex min-h-screen flex-col items-center justify-center text-white'>
-						<a href='###'>
-							<h1>Vite React Tailwind</h1>
-						</a>
-						<Button
-							onClick={() => {
-								setCount((prev) => prev + 1);
-								setCount((prev) => prev + 1);
-							}}
-						>
-							Button
-						</Button>
-
-						<p>Counter value: {count}</p>
-
-						<footer className='absolute bottom-2 text-gray-300'>
-							© {new Date().getFullYear()} <a href='https://trifall.com'>Jerren Trifan</a>
-						</footer>
-					</div>
-				</section>
+			<main className='bg-dark flex flex-row gap-2'>
+				<Stoplight key={1} green_duration={5} red_duration={5} yellow_duration={1} />
+				<Stoplight key={2} green_duration={7} red_duration={7} yellow_duration={2} startingState='yellow' />
+				<Stoplight key={3} green_duration={9} red_duration={9} yellow_duration={3} />
 			</main>
 		</>
 	);
