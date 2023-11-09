@@ -1,8 +1,8 @@
 {
-	"name": "vite-react-ts-tw-shadcn-template",
+	"name": "stoplight-challenge",
 	"version": "1.0.1",
 	"type": "module",
-	"description": "A template with Vite, React, TypeScript, TailwindCSS, and ShadCN UI.",
+	"description": "A React app functional stoplight component challenge",
 	"author": {
 		"name": "Jerren Trifan",
 		"email": "Jerren@trifall.com"
